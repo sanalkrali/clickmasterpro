@@ -53,7 +53,7 @@ ClickMaster Pro, güvenli erişim için benzersiz bir donanım kimliği sistemi 
 ## 6. Sıkça Sorulan Sorular (SSS)
 
 - **S: Uygulama neden açılmıyor?**  
-  **C:** Bilgisayarınızda Visual C++ Redistributable paketlerinin güncel olduğundan emin olun ve antivirüs yazılımının dosyayı karantinaya alıp almadığını kontrol edin.
+  **C:** Bilgisayarınızda Java JDK, JRE 1.8 paketlerinin güncel olduğundan emin olun.
 
 - **S: CPS hızı neden seçtiğim değerin biraz altında/üstünde?**  
   **C:** "Humanized Timing" özelliği aktifse, sistem sizi korumak için hızı sürekli küçük oranlarda değiştirir. Bu bir hata değil, güvenlik özelliğidir.
