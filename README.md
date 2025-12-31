@@ -1,29 +1,31 @@
-# ClickMaster Pro: Kullanım Kılavuzu ve Teknik Dokümantasyon
+# ClickMaster Pro: Gelişmiş Tıklama Motoru
 
-## 1. Proje Özeti
+ClickMaster Pro, **oyun deneyiminizi bir üst seviyeye taşımak için geliştirilmiş** güçlü bir tıklama motorudur. Modern oyun mekaniklerine uyum sağlamak için tasarlandı ve **gerçek zamanlı tıklama yönetimi** ile sizi rakiplerinizin bir adım önüne geçirir.
 
-**ClickMaster Pro**, modern oyun mekanikleri ve ileri düzey otomasyon ihtiyaçları için Java tabanlı, düşük gecikme süreli (low-latency) bir tıklama motoru olarak geliştirilmiştir. Projenin temel amacı, "Legit" (doğal) tıklama dinamiklerini gelişmiş bir kullanıcı arayüzü ile sunmaktır.
+## Öne Çıkan Özellikler
 
-## 2. Öne Çıkan Özellikler
+### **Dual Engine Teknolojisi**
+ClickMaster Pro, **sol ve sağ tıklamalar için bağımsız çalışan iki motor** ile size tam kontrol sağlar. Bu, aynı anda farklı tıklama işlevlerini kullanarak oyunun her anında maksimum performansı elde etmenize olanak tanır.
 
-### 2.1. Gelişmiş Tıklama Motoru (Dual Engine)
-- **CPS Aralığı:** 1 - 20 CPS (Clicks Per Second) arasında hassas seçim.
-- **Hold Mode:** Kısayol tuşuna basılı tutulduğu sürece aktif olan kullanım modu.
-- **Toggle Mode:** Bir kez basıldığında açılır, tekrar basıldığında kapanır.
+- **CPS Seçimi:** 1 - 20 CPS arası hassas seçim yapabilirsiniz.
+- **Hold Mode:** Tıklama tuşuna basılı tuttuğunuzda sürekli tıklama.
+- **Toggle Mode:** Bir kez basarak başlatır, tekrar basarak durdurur.
 
-### 2.2. Legit (Doğal) Tıklama Teknolojisi
-- **Humanized Timing:** Sabit milisaniyeler yerine Gaussian Dağılımı (Çan Eğrisi) kullanarak tıklama aralıklarını milisaniyelik farklarla sürekli değiştirir.
-- **Gaussian Variation:** Tıklama hızını `$CPS \pm 0.5$` aralığında doğal bir şekilde dalgalandırarak anti-cheat sistemlerine yakalanma riskini minimize eder.
+### **Humanized Timing – Doğal Tıklama Deneyimi**
+ClickMaster Pro, **sabit zaman dilimleri yerine doğal, insan benzeri tıklama aralıkları** kullanarak, her tıklamanın gerçek bir oyuncuya ait gibi görünmesini sağlar. Bu, oyunların **anti-cheat sistemlerine yakalanma riskinizi azaltır.**
 
-### 2.3. Profesyonel Rod Macro (Olta Makrosu)
-PvP oyuncuları için özel olarak geliştirilen bu sistem, **"Instant Swap"** teknolojisini kullanır:
-- **Hızlı Geçiş:** Olta ve kılıç slotları arasında geçiş yaparken yapay gecikmeleri ortadan kaldırır.
-- **Özelleştirilebilir Gecikme:** Oltanın havada süzülme süresini milisaniyelik hassasiyetle ayarlayabilme imkanı.
+- **Gaussian Variation:** Tıklama hızını doğal bir şekilde dalgalandırır ve size gerçekçi bir deneyim sunar.
 
-### 2.4. Aircraft Radar Sistemi
-Görsel takip için dashboard üzerinde bulunan radar sistemi, tıklama motorunun anlık durumunu ve tıklama tepkilerini dairesel bir grafik üzerinde gerçek zamanlı olarak gösterir.
+### **Rod Macro (Olta Makrosu)**
+PvP oyuncuları için özel olarak geliştirilmiş olan bu özellik, olta ve kılıç slotları arasında geçiş yaparken **yapay gecikmeleri** ortadan kaldırır.
 
-## 3. Teknik Mimarî
+- **Instant Swap:** Hızlı geçişler sayesinde, rakiplerinizi anında şaşırtabilirsiniz.
+- **Özelleştirilebilir Gecikme:** Olta havada süzülürken, süresini milisaniyelik hassasiyetle ayarlayabilirsiniz.
+
+### **Gerçek Zamanlı Radar Sistemi**
+ClickMaster Pro’nun **Radar Sistemi**, tıklama motorunun anlık durumunu ve tepkilerini görsel olarak izleyebilmenizi sağlar. Bu, özellikle **oyunun ilerleyişine göre** stratejilerinizi anında ayarlamanıza yardımcı olur.
+
+## Teknik Özellikler
 
 | Bileşen              | Teknoloji      | Açıklama                                             |
 |----------------------|----------------|------------------------------------------------------|
@@ -33,38 +35,38 @@ Görsel takip için dashboard üzerinde bulunan radar sistemi, tıklama motorunu
 | **Grafik Motoru**     | Prism D3D      | DirectX tabanlı donanım hızlandırmalı çizim.            |
 | **Optimizasyon**      | Mini JRE       | Sadece gerekli Java modüllerini içeren 50MB'lık hafif paket. |
 
-## 4. Kurulum ve Yapılandırma
+## Kullanıcı Rehberi
 
-### 4.1. İlk Çalıştırma
-- **Yönetici Yetkisi:** Uygulamanın klavye ve fareyi global olarak kontrol edebilmesi için mutlaka **Yönetici Olarak Çalıştır** seçeneğiyle açılması gerekir.
-- **HWID Doğrulama:** Uygulama ilk açılışta sisteminizin HWID (Hardware ID) bilgisini GitHub üzerinden kontrol eder. Erişim izniniz yoksa hata ekranıyla karşılaşırsınız.
+### **İlk Çalıştırma**
+- Uygulamayı **Yönetici olarak çalıştırın**. Bu, programın klavye ve fareyi global olarak kontrol etmesine izin verir.
+- **HWID doğrulaması** yapılacaktır; sisteminizin HWID bilgisi kontrol edildikten sonra, uygulamayı sorunsuzca kullanabilirsiniz.
 
-### 4.2. Ayarların Yapılandırılması
-- **Kısayol Tuşları:** `Settings` sekmesine giderek sol tık, sağ tık ve olta makrosu için klavye veya fare tuşlarını atayın.
-- **Kayıt Sistemi:** Yapılan tüm ayarlar `AppData/Roaming/ClickMasterPro/config.properties` dosyasına otomatik olarak kaydedilir.
+### **Ayarları Yapılandırma**
+1. **Kısayol Tuşları:** `Settings` sekmesinden, sol tıklama, sağ tıklama ve olta makrosu için tuş atamaları yapın.
+2. **Kayıt:** Ayarlar, **AppData/Roaming/ClickMasterPro/config.properties** dosyasına kaydedilir.
 
-## 5. Güvenlik ve Gizlilik (HWID)
+## Güvenlik ve Gizlilik
 
-ClickMaster Pro, güvenli erişim için benzersiz bir donanım kimliği sistemi kullanır. Bu sistem:
-- Uygulamanın izinsiz kopyalanmasını engeller.
-- Kullanıcı bazlı yetkilendirme sağlar.
-- İnternet bağlantısı üzerinden anlık lisans kontrolü yapar.
+**ClickMaster Pro**, benzersiz bir donanım kimliği (HWID) sistemi kullanarak:
+- Uygulamanın **izinsiz kopyalanmasını engeller.**
+- **Kullanıcı bazlı** yetkilendirme sağlar.
+- İnternet üzerinden **lisans doğrulama** yaparak güvenli erişim sunar.
 
-## 6. Sıkça Sorulan Sorular (SSS)
+## Sıkça Sorulan Sorular (SSS)
 
-- **S: Uygulama neden açılmıyor?**  
-  **C:** Bilgisayarınızda Java JDK, JRE 1.8 paketlerinin güncel olduğundan emin olun.
+- **S: Uygulama neden açılmıyor?**
+  - **C:** Bilgisayarınızda Visual C++ Redistributable paketlerinin güncel olduğundan emin olun. Ayrıca, antivirüs yazılımınızın dosyayı karantinaya alıp almadığını kontrol edin.
 
-- **S: CPS hızı neden seçtiğim değerin biraz altında/üstünde?**  
-  **C:** "Humanized Timing" özelliği aktifse, sistem sizi korumak için hızı sürekli küçük oranlarda değiştirir. Bu bir hata değil, güvenlik özelliğidir.
+- **S: CPS hızı neden sabit değil?**
+  - **C:** "Humanized Timing" özelliği aktiftir ve tıklama hızını küçük oranlarda değiştirerek gerçekçi hale getirir. Bu, güvenlik önlemidir.
 
-- **S: Olta makrosu çalışmıyor?**  
-  **C:** Kısayol tuşunun başka bir program tarafından kullanılmadığından emin olun ve olta/kılıç slot numaralarının oyundaki slotlarınızla eşleştiğini kontrol edin.
+- **S: Olta makrosu çalışmıyor?**
+  - **C:** Kısayol tuşlarının başka bir program tarafından kullanılmadığından ve olta/kılıç slotlarının doğru şekilde eşleştiğinden emin olun.
 
-## 7. İletişim ve Destek
+## İletişim ve Destek
 
-Her türlü teknik sorun ve topluluk katılımı için:
+Herhangi bir teknik sorunla karşılaşırsanız veya topluluğa katılmak isterseniz:
 - **Geliştirici:** untilshurawin (Discord)
 - **Topluluk:** [discord.gg/arjantin](https://discord.gg/arjantin)
 
-Copyright © 2025 ClickMaster Pro. Her hakkı saklıdır.
+Copyright © 2025 ClickMaster Pro. Tüm hakları saklıdır.
